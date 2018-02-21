@@ -8,9 +8,21 @@
  * @see <a href="https://cs125.cs.illinois.edu/lab/8/">Lab 8 Description</a>
  */
 public class Bank {
+    /**
+     * Does a name.
+     */
+    private String bankName;
 
-    public String bankName;
-
+    /**
+     * Javadoc to quiet checkstyle.
+     * @return DLC.
+     */
+    public String getBankName() {
+        return bankName;
+    }
+    /**
+     * EXPAND.
+     */
     public Bank() {
         bankName = "Illini Bank";
     }
@@ -29,6 +41,7 @@ public class Bank {
         /*
          * Implement this function
          */
+        return false;
     }
 
     /**
@@ -45,6 +58,7 @@ public class Bank {
         /*
          * Implement this function
          */
+        return false;
     }
 
     /**
@@ -64,6 +78,7 @@ public class Bank {
         /*
          * Implement this function
          */
+        return false;
     }
 
     /**
@@ -79,7 +94,10 @@ public class Bank {
          */
     }
 
-    public static int totalAccounts = 0;
+    /**
+     * Total amount of accounts.
+     */
+    private static int totalAccounts = 0;
     /**
      * Uses static variable to get number of bank accounts opened.
      *
@@ -89,6 +107,7 @@ public class Bank {
         /*
          * Implement this function
          */
+        return 0;
     }
 
     /**
@@ -122,5 +141,6 @@ public class Bank {
         // Print number of accounts
         System.out.print("Number of active accounts at " + bank.bankName + " are ");
         System.out.println(Bank.totalAccounts);
+        System.out.println(getNumberOfAccount());
     }
 }
